@@ -1,0 +1,59 @@
+<!-- <div class="row">
+  <div class="col-md-4">
+    <card cardTitle="small progressbar">
+      <progress-bar percent="30"></progress-bar>
+      <progress-bar percent="40" theme="success"></progress-bar>
+      <progress-bar percent="50" theme="warning"></progress-bar>
+      <progress-bar percent="60" theme="danger"></progress-bar>
+      <progress-bar percent="70" theme="info"></progress-bar>
+    </card>
+  </div>
+  <div class="col-md-8">
+    <card cardTitle="large progressbar">
+      <progress-bar percent="30" theme="primary" size="lg"></progress-bar>
+      <progress-bar percent="40" theme="success" size="lg"></progress-bar>
+      <progress-bar percent="50" theme="warning" size="lg"></progress-bar>
+      <progress-bar percent="60" theme="danger" size="lg"></progress-bar>
+      <progress-bar percent="70" theme="info" size="lg"></progress-bar>
+    </card>
+  </div>
+  <div class="col-md-12">
+    <card cardTitle="without percentNumber">
+      <progress-bar percent="30" [percentShow]="false" theme="primary" size="lg"></progress-bar>
+      <progress-bar percent="40" [percentShow]="false" theme="success" size="lg"></progress-bar>
+      <progress-bar percent="50" [percentShow]="false" theme="warning" size="lg"></progress-bar>
+      <progress-bar percent="60" [percentShow]="false" theme="danger" size="lg"></progress-bar>
+      <progress-bar percent="70" [percentShow]="false" theme="info" size="lg"></progress-bar>
+    </card>
+  </div>
+</div> -->
+<card cardTitle="Project Details">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Project</th>
+        <th>Task</th>
+        <th>Assigned_To</th>
+       <th>Start_date</th>
+       <th>Deadline</th>
+       <th>Priority</th>
+       <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of default_data;let index = index">
+        <td>{{index}}</td>
+        <td>{{item.first_name}}</td>
+        <td>{{item.last_name}}</td>
+        <td>{{item.user_name}}</td>
+        <td>{{item.start}}</td>
+        <td>{{item.end}}</td>
+        <td>{{item.pri}}</td>
+        <td>{{item.sta}}</td>
+      </tr>
+    </tbody>
+  </table>
+</card>
+<!-- </div> -->
+<!-- </div> -->

@@ -1,0 +1,134 @@
+<div class="row">
+  <!-- <div class="col-md-6">
+    <card cardTitle="basic table">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>FIRSTNAME</th>
+            <th>LASTNAME</th>
+            <th>USERNAME</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of default_data;let index = index">
+            <td>{{index}}</td>
+            <td>{{item.first_name}}</td>
+            <td>{{item.last_name}}</td>
+            <td>{{item.user_name}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </card>
+  </div>
+  <div class="col-md-6">
+    <card cardTitle="bordered table">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>FIRSTNAME</th>
+            <th>LASTNAME</th>
+            <th>USERNAME</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of default_data;let index = index">
+            <td>{{index}}</td>
+            <td>{{item.first_name}}</td>
+            <td>{{item.last_name}}</td>
+            <td>{{item.user_name}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </card>
+  </div>
+  <div class="col-md-6">
+    <card cardTitle="hover table">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>FIRSTNAME</th>
+            <th>LASTNAME</th>
+            <th>USERNAME</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of default_data;let index = index">
+            <td>{{index}}</td>
+            <td>{{item.first_name}}</td>
+            <td>{{item.last_name}}</td>
+            <td>{{item.user_name}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </card>
+  </div> -->
+  <!-- <div class="col-md-6">
+    <card cardTitle="Employee list table">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>FIRSTNAME</th>
+            <th>LASTNAME</th>
+            <th>USERNAME</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of default_data;let index = index">
+            <td></td>
+            <td></td>
+            <td></td>
+            <!-- <td>{{item.user_name}}</td> -->
+            <!-- <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </card>
+  </div>
+</div> --> 
+<div class="row">
+  <div class="col-md-12">
+    <!-- <card cardTitle="Inline Form"> -->
+      <!-- <form class="form-inline">
+        <label for="example1" class="form-label">Name:</label>
+        <input type="text" class="form-control" id="example1" placeholder="Jane Doe">
+        <label for="example2" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="example2" placeholder="jane.doe@example.com">
+        <button type="submit" class="btn btn-primary">Send Invitation</button>
+      </form> -->
+    <!-- </card> -->
+  </div>
+  <div class="col-md-12">
+    <card cardTitle="Assign Project">
+      <form class="form-group">
+        <label class="control-label">Project Title</label>
+        <input type="text" class="form-control" placeholder="Name">
+        <label class="control-label">Manager</label>
+
+        <select name="select" id="select1" class="form-control">
+          <option value="option1">select</option>
+          <!-- <option value="option2"></option>
+          <option value="option3"></option>
+          <option value="option4"></option> -->
+        </select>
+      
+        <label class="control-label">Start Date</label>
+        <input type="date" class="form-control" placeholder="">
+        <label class="control-label">End Date</label>
+        <input type="date" class="form-control" placeholder="">
+
+        <!-- <label class="control-label">Password</label>
+        <input type="password" class="form-control" placeholder="Password"> -->
+        <label class="control-label">Description</label>
+        <textarea class="form-control" placeholder="Description"></textarea>
+        <!-- <input class="checkbox" type="checkbox" id="remember" checked>
+        <label class="check-label" for="remember">Remember Me</label> -->
+        <button type="submit" class="btn btn-primary" (click)="alert()">Submit</button>
+      </form>
+    </card>
+  </div>
+</div>
+
